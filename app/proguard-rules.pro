@@ -31,7 +31,7 @@
 # Retain declared checked exceptions for use by a Proxy instance.
 -keepattributes Exceptions
 
-##---------------Begin: proguard configuration for Retrofit2  ----------
+##---------------End: proguard configuration for Retrofit2  ----------
 
 ##---------------Begin: proguard configuration for Gson  ----------
 # Gson uses generic type information stored in a class file when working with fields. Proguard
@@ -55,3 +55,8 @@
 -keep class * implements com.google.gson.JsonDeserializer
 
 ##---------------End: proguard configuration for Gson  ----------
+
+##---------------Begin: proguard configuration for okio (running within Retrofit2 Library)  ----------
+-dontwarn okio.**
+
+##---------------End: proguard configuration for okio  ----------
