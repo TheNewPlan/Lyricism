@@ -4,6 +4,6 @@ public class Constants {
 
     public static final String API_KEY = "";
 
-    public static final String API_ENDPOINT = "https://api.genius.com";
+    public static final String API_ENDPOINT = "http://api.musixmatch.com/ws/1.1/";
 
 }
